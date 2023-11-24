@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+}
+body {
+  height: 100vh;
+  background-color: #333;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.continar {
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 300px;
+  border-radius: 50px;
+  text-align: center;
+  border: 2px solid #32fca7;
+}
+
+h1 {
+  margin: 16px;
+  color: #08d57f;
+}
+
+input {
+  background-color: #049a5b;
+  color: white;
+  border-radius: 15px;
+}
+
+label {
+  color: #08d57f;
+}
+
+button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #32fca7;
+}
+
+button + span {
+  display: block;
+  text-shadow: #32fca7 2px 0px 2px;
+}
+
+button:hover {
+  animation: move 2s alternate infinite;
+}
+@keyframes move {
+  20% {
+    transform: scale(1.5);
+  }
+  40% {
+    transform: scale(0.8);
+  }
+  80% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+span {
+  padding-top: 5px;
+}
+
+.continar .sn {
+  color: #049a5b;
+  text-shadow: none;
+}
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .continar {
+    max-width: 100%;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  button {
+    width: 100px;
+    margin: 20px auto;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+/* 
+// XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
